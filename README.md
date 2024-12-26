@@ -189,7 +189,7 @@ is permitted.
    ```
    if to is labor_dao treasure or excange:
       return true
-   if to is not issuer:
+   if to is not a member of the DAO (can call is_member on the membership contract of the DAO for this):
       return false
    if to enables whitelist:
       if token_issued_by is on whitelist, return true
